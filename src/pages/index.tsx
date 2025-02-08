@@ -8,6 +8,7 @@ import {
   CardDescription,
   CardHeader,
 } from "@/components/ui/card";
+import Waveform from "@/components/WaveForm";
 
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL as string,
@@ -227,12 +228,14 @@ const AudioRecorderPage = () => {
       ) : null}
 
       {audioUrl ? (
-        <Card className="flex items-center justify-center my-4 mx-auto w-[80%] p-2">
+        <Card className="flex items-center justify-center my-4 mx-auto w-[80%] p-4">
+          <Waveform audioUrl={audioUrl} />
           <audio
             controls
             src={audioUrl}
             ref={audioPlayerRef}
             onClick={() => playRecordedAudio()}
+            className="hidden"
           ></audio>
         </Card>
       ) : null}
@@ -244,12 +247,14 @@ const AudioRecorderPage = () => {
           </h1>
           {recordedAudios?.map((d, index) => (
             <div key={index}>
-              <span className="text-slate-500">{d.name}</span>
+              <span className="text-slate-500 my-2 block">{d.name}</span>
+              <Waveform audioUrl={d.url} />
               <audio
                 src={d.url}
                 key={index}
                 controls
                 preload="metadata"
+                className="hidden"
               ></audio>
             </div>
           ))}

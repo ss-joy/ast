@@ -44,6 +44,9 @@ importers:
       tailwindcss-animate:
         specifier: ^1.0.7
         version: 1.0.7(tailwindcss@3.4.17)
+      wavesurfer.js:
+        specifier: ^7.9.0
+        version: 7.9.0
     devDependencies:
       '@types/node':
         specifier: ^20
@@ -826,6 +829,9 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
+  wavesurfer.js@7.9.0:
+    resolution: {integrity: sha512-ZzyHn+htSsZ0omPSYaAbhnoMqlLVO1lR8b+hACMBEvpZmkScJn0AmQkBo2a5u5UtOuCVc0Xv/tM+KtJVv5yvtQ==}
+
   webidl-conversions@3.0.1:
     resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
 
@@ -1577,6 +1583,8 @@ snapshots:
   undici-types@6.19.8: {}
 
   util-deprecate@1.0.2: {}
+
+  wavesurfer.js@7.9.0: {}
 
   webidl-conversions@3.0.1: {}
 
