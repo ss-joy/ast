@@ -274,9 +274,9 @@ const AudioRecorderPage = () => {
         <CardHeader>
           <p>
             <span className="uppercase text-orange-500 font-bold">YOUR</span>{" "}
-            Browsers can{" "}
+            Browser can{" "}
             <span className="uppercase text-orange-500 font-bold">play</span>{" "}
-            the listed audio files....
+            the listed audio files formats
           </p>
         </CardHeader>
         <CardContent>
@@ -305,12 +305,12 @@ const AudioRecorderPage = () => {
         <CardHeader>
           <p>
             <span className="uppercase text-cyan-500 font-bold">YOUR</span>{" "}
-            Browsers can{" "}
+            Browser can{" "}
             <span className="uppercase text-cyan-500 font-bold">record</span>{" "}
             the listed audio file formats
           </p>
         </CardHeader>
-        <CardDescription className="ml-6 my-4">
+        <CardDescription className="ml-6 mb-4">
           Currently using: {selectedMimeType} to record audios
         </CardDescription>
 
